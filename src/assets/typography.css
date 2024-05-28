@@ -4,7 +4,7 @@
   font-weight: 400;
   src: 
     local("Bungee-Regular");
-    url(fonts/bungee-regular.ttf) format('ttf');
+    url(fonts/bungee/bungee-regular.ttf) format('ttf');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-weight: 600;
   src: 
     local("FiraSansCondensed-SemiBold");
-    url(fonts/firasanscondensed-semibold.ttf) format('ttf');
+    url(fonts/firaSC/firasanscondensed-semibold.ttf) format('ttf');
 }
 
 html {
