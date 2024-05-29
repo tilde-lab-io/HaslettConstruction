@@ -33,37 +33,47 @@
   <link href="src/assets/fontawesome/all.min.css" media="screen" rel="stylesheet" type="text/css"/>
 </head>
 
-
-<body class="bg-primary">
-  <header class="padding-x-sm padding-bottom-md">
-    <figure class="max-width-adaptive-sm">
-      <img src="https://ik.imagekit.io/HaslettConstruction/Branding/HCC_Logo.svg?updatedAt=1716937487401" alt="">
+<body class="bg-primary flex flex-column flex-wrap">
+  <header class="text-center order-1 padding-bottom-lg">
+    <figure>
+      <img src="https://ik.imagekit.io/HaslettConstruction/Branding/HCC_Logo.svg?updatedAt=1716937487401" alt="" class="max-width-xs@sm ">
     </figure>
-    <h1 class="height-0 width-0 invisible">Haslett Construction Co., Inc.</h1>
-    <p class="text-lg">Home Remodeling and General Contracting Services</p>
-    <p class="text-md font-italic">Serving Orange County since 1992!</p>
+    <div class="padding-x-lg">
+      <h1 class="height-0 width-0 invisible">Haslett Construction Co., Inc.</h1>
+      <p class="text-lg">Home Remodeling and General Contracting Services</p>
+      <p class="text-md font-italic">Serving Orange County since 1992!</p>
+    </div>
   </header>
   
-  <section class="padding-x-sm padding-bottom-xl">
-    <form action="ENDPOINT HERE" method="POST" class="padding-md bg-white border border-accent border-2 radius-md">
-      <h2>Schedule an Appointment</h2>
-      <fieldset class="flex flex-column flex-row@sm gap-sm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" class="border">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" class="border">
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" class="border">
+  <section class="container text-center order-2 padding-y-lg">
+    <form action="ENDPOINT HERE" method="POST" class="bg-white padding-sm border border-accent border-2 radius-md shadow-sm">
+      <h2 class="text-lg">Schedule an Appointment</h2>
+      <fieldset class="flex flex-center flex-column flex-row@sm gap-sm">
+        <fieldset>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="A. Smith" class="border">
+        </fieldset>
+        <fieldset>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="email@email.com" class="border">
+        </fieldset>
+        <fieldset>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="(949) 867-5309" class="border">
+        </fieldset>
       </fieldset>
       <button type="submit" class="btn">NEXT</button>
     </form>
   </section>
   
-  <figure class="media-wrapper-16:9">
-  <img src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/IMG_0293.jpeg?updatedAt=1715018489202"/>
-  </figure>
+  <section class="border-top border-bottom border-2 border-accent order-1">
+    <figure>
+      <img
+          src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/IMG_0293.jpeg?updatedAt=1715018489202"/>
+    </figure>
+  </section>
   
-  <footer class="bg-black flex flex-column flex-center text-center">
+  <footer class="order-3 bg-black padding-y-sm flex flex-column flex-center text-center flex@md">
     <small class="color-white">Copyright &copy; 2024 Haslett Construction Company, Inc. <br /> All rights reserved.</small>    
     <ul class="flex flex-row gap-x-2xs">
       <li>
