@@ -5,6 +5,30 @@
   src: 
     local("Bungee-Regular");
     url(fonts/bungee/bungee-regular.ttf) format('ttf');
+    url(fonts/bungee/bungee-regular.woff) format('woff');
+    url(fonts/bungee/bungee-regular.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'FiraRegular', sans-serif;
+  font-style: Normal;
+  font-weight: 400;
+  src: 
+    local("FiraSansCondensed-SemiBold");
+    url(fonts/firaSC/firasanscondensed-medium.ttf) format('ttf');
+    url(fonts/firaSC/firasanscondensed-medium.woff) format('woff');
+    url(fonts/firaSC/firasanscondensed-medium.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'FiraSansCondensed-Medium', sans-serif;
+  font-style: Normal;
+  font-weight: 400;
+  src: 
+    local("FiraSansCondensed-SemiBold");
+    url(fonts/firaSC/firasanscondensed-mediumitalic.ttf) format('ttf');
+    url(fonts/firaSC/firasanscondensed-mediumitalic.woff) format('woff');
+    url(fonts/firaSC/firasanscondensed-mediumitalic.otf) format('otf');
 }
 
 @font-face {
@@ -14,6 +38,8 @@
   src: 
     local("FiraSansCondensed-SemiBold");
     url(fonts/firaSC/firasanscondensed-semibold.ttf) format('ttf');
+    url(fonts/firaSC/firasanscondensed-semibold.woff) format('woff');
+    url(fonts/firaSC/firasanscondensed-semibold.otf) format('otf');
 }
 
 html {
@@ -22,9 +48,10 @@ html {
 }
 
 body {
-  color: var(--color-contrast-high);
-  font-family: var(--font-primary);
+  color: var(--color-accent, black);
+  font-family: var(--font-primary-bold), sans-serif;
   font-size: var(--text-base);
+  font-weight: 600;
   line-height: 1.4;
 }
 
@@ -54,11 +81,17 @@ small {
   font-size: var(--text-sm);
 }
 
-.font-primary { 
-  font-family: var(--font-primary); 
+.font-primary-regular { 
+  font-family: var(--font-primary-regular), sans-serif; 
 }
-.font-deco {
-  font-family: var(--font-deco);
+.font-primary-italic { 
+  font-family: var(--font-primary-italic), sans-serif; 
+}
+.font-primary-bold { 
+  font-family: var(--font-primary-bold), sans-serif; 
+}
+.font-deco {;
+  font-family: var(--font-deco), sans-serif
 }
 
 .link {
@@ -85,7 +118,7 @@ small {
   background-image: linear-gradient(to right, currentColor 50%, hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.2) 50%);
 }
 .link:hover {
-  background-position: 0% 100%;
+  background-position: 0 100%;
 }
 
 /* text-component */

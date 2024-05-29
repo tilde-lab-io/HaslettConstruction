@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-  <title>Haslett Construction | Gerneral Contracting Services</title>
+  <title>Haslett Construction | General Contracting Services</title>
   <link href="https://haslett.construction" rel="canonical"/>
   <meta content="Site description" name="description"/>
-  <meta content="#f7f7f7" name="theme-color"/>
-
+ 
   <meta content="website" property="og:type"/>
   <meta content="https://www.haslett.construction" property="og:url"/>
   <meta content="image/webp" property="og:image:type"/>
@@ -19,12 +18,10 @@
   <meta content="Haslett Construction" property="og:title"/>
   <meta content="" property="og:description"/>
   
-  <link href="src/assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="src/assets/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-  <link href="src/assets/favicon/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png">
-  <link href="src/assets/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-  <link href="src/assets/favicon/site.webmanifest" rel="manifest">
-  <link href="src/assets/favicon/favicon.ico" rel="shortcut icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta content="#603cba" name="msapplication-TileColor">
   <meta content="src/assets/favicon/browserconfig.xml" name="msapplication-config">
   <meta content="#ffffff" name="theme-color">
@@ -37,37 +34,43 @@
 </head>
 
 
-<body>
-  <header>
-    <h1 class="font-deco"><span></span>Haslett Construction Co. <sup class="text-md">Inc.</sup></h1>
-    <p>Home Remodeling and General Contracting Services</p>
-    <p>Serving Orange County since 1992!</p>
+<body class="bg-primary">
+  <header class="padding-x-sm padding-bottom-md">
+    <figure class="max-width-adaptive-sm">
+      <img src="https://ik.imagekit.io/HaslettConstruction/Branding/HCC_Logo.svg?updatedAt=1716937487401" alt="">
+    </figure>
+    <h1 class="height-0 width-0 invisible">Haslett Construction Co., Inc.</h1>
+    <p class="text-lg">Home Remodeling and General Contracting Services</p>
+    <p class="text-md font-italic">Serving Orange County since 1992!</p>
   </header>
-  <section>
-    <p>Schedule an Appointment</p>
-    <form action="ENDPOINT HERE" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your Name">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Your Email">
-      <label for="phone">Phone Number:</label>
-      <input id="phone" name="phone" placeholder="Your Phone Number"></textarea>
-      <button type="submit">NEXT</button>
+  
+  <section class="padding-x-sm padding-bottom-xl">
+    <form action="ENDPOINT HERE" method="POST" class="padding-md bg-white border border-accent border-2 radius-md">
+      <h2>Schedule an Appointment</h2>
+      <fieldset class="flex flex-column flex-row@sm gap-sm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" class="border">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" class="border">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" class="border">
+      </fieldset>
+      <button type="submit" class="btn">NEXT</button>
     </form>
   </section>
   
-  <figure>
-  <img src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/IMG_0287.jpeg?updatedAt=1715018492070"/>
+  <figure class="media-wrapper-16:9">
+  <img src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/IMG_0293.jpeg?updatedAt=1715018489202"/>
   </figure>
   
-  <footer>
-    <p>Copyright &copy; 2024. All rights reserved.</p>
-    <ul>
+  <footer class="bg-black flex flex-column flex-center text-center">
+    <small class="color-white">Copyright &copy; 2024 Haslett Construction Company, Inc. <br /> All rights reserved.</small>    
+    <ul class="flex flex-row gap-x-2xs">
       <li>
-        <a class="" href=""> <span class="fa-brands fa-houzz"></span></a>
+        <a class="" href=""> <span class="inline-block fa-brands fa-houzz"></span></a>
       </li>
       <li>
-        <a class="" href=""> <span class="fa-brands fa-yelp"></span></a>
+        <a class="" href=""> <span class="inline-block fa-brands fa-yelp"></span></a>
       </li>
     </ul>
   </footer>
