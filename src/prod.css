@@ -12,3 +12,18 @@
 /* ... */
 
 @import 'assets/util.css'; /* ← utility classes */
+
+.micro-gallery-cell {
+    width: 100%; /* full width */
+}
+.flickity-prev-next-button.previous {
+    display: none;
+}
+.flickity-prev-next-button.next {
+    display: none;
+}
+/* position dots up a bit */
+.flickity-page-dots {
+    display: none;
+    /* bottom: -22px; */
+}

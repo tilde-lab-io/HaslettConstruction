@@ -29,26 +29,28 @@
   <!--Loaders-->
   
   <!-- Stylesheets -->
-  <link href="src/prod.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="src/assets/fontawesome/all.min.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="src/prod.css" media="screen"  type="text/css"/>  
+  <link rel="stylesheet" href="src/assets/flickity/flickity.css" media="screen">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/assets/fontawesome/all.min.css" media="screen"  type="text/css"/>
 </head>
 
 <body class="bg-primary flex flex-column flex-wrap">
-  <header class="text-center order-1 padding-bottom-lg">
+  <header class="text-center order-1 ">
     <figure class="bg-accent">
-      <img src="https://ik.imagekit.io/HaslettConstruction/Branding/HCC_Logo_fabe4f.svg?updatedAt=1716962483233" alt="" class="max-width-2xs">
+      <img src="https://ik.imagekit.io/HaslettConstruction/Branding/HCC_Logo_fabe4f.svg?updatedAt=1716962483233" alt="" class="max-width-2xs margin-auto">
     </figure>
     <div class="padding-x-lg padding-y-lg">
       <h1 class="height-0 width-0 invisible">Haslett Construction Co., Inc.</h1>
-      <p class="text-lg">Home Remodeling and General Contracting Services</p>
+      <p class="text-lg">Residential Remodeling and <br /> General Contracting Services</p>
       <p class="text-md font-italic">Serving Orange County since 1992!</p>
     </div>
   </header>
   
-  <section class="container text-center order-2 padding-y-lg">
-    <form action="ENDPOINT HERE" method="POST" class="bg-white padding-sm border border-accent border-2 radius-md shadow-sm">
+  <section class="text-center order-2 bg-white padding-md">
+    <!-- <form action="ENDPOINT HERE" method="POST" class="bg-white padding-x-sm padding-y-lg border border-accent border-2 radius-md shadow-sm">
       <h2 class="text-lg">Schedule an Appointment</h2>
-      <fieldset class="flex flex-center flex-column flex-row@sm gap-sm">
+      <fieldset class="flex flex-center flex-column flex-row@sm gap-sm padding-bottom-lg">
         <fieldset>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" placeholder="A. Smith" class="border">
@@ -62,31 +64,60 @@
           <input type="tel" id="phone" name="phone" placeholder="(949) 867-5309" class="border">
         </fieldset>
       </fieldset>
-      <button type="submit" class="btn">NEXT</button>
-    </form>
+    </form> -->
+    <p class="text-md margin-bottom-md">Locally owned and operated, we provide full-service remodeling and custom builds for homes throughout Orange County's coastal communities</p>
+    <p class="text-lg margin-bottom-xs"> Have a project in mind? Let's chat.</p>
+    <a href="#"
+       class="btn--accent inline-block padding-sm radius-sm"
+       onclick="Calendly.initPopupWidget({
+         url: 'https://calendly.com/haslettconstructionco/15min'});return false;">
+      Schedule an Appointment
+    </a>
   </section>
   
-  <section class="border-top border-bottom border-2 border-accent order-1">
-    <figure>
-      <img
-          src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/IMG_0293.jpeg?updatedAt=1715018489202"/>
+  <section class="hcc-micro-gallery order-1 border-bottom border-top border-4 border-accent">
+    <figure class="micro-gallery-cell">
+      <img src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_before_v1.jpg?updatedAt=1717010560668" 
+           alt="" />
     </figure>
+    <figure class="micro-gallery-cell">
+      <img src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_exteriorafter_closeup.jpg?updatedAt=1717010559789" 
+           alt="" />
+    </figure>
+
+    <figure class="micro-gallery-cell">
+      <img
+          src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_kitchen.jpg?updatedAt=1717010559593"
+          alt=""/>
+    </figure>
+    <figure class="micro-gallery-cell">
+      <img
+          src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_livingroom.jpg?updatedAt=1717010560054"
+          alt=""/>
+    </figure>
+    <figure class="micro-gallery-cell">
+      <img
+          src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_bedroom.jpg?updatedAt=1717010557067"
+          alt=""/>
+    </figure>
+
   </section>
   
   <footer class="order-3 bg-black padding-y-sm flex flex-column flex-center text-center flex@md">
     <small class="color-white">Copyright &copy; 2024 Haslett Construction Company, Inc. <br /> All rights reserved.</small>    
-    <ul class="flex flex-row gap-x-2xs">
+    <ul class="flex flex-row gap-x-sm">
       <li>
-        <a class="" href=""> <span class="inline-block fa-brands fa-houzz"></span></a>
+        <a class="text-lg" href=""> <span class="inline-block fa-brands fa-houzz"></span></a>
       </li>
       <li>
-        <a class="" href=""> <span class="inline-block fa-brands fa-yelp"></span></a>
+        <a class="text-lg" href=""> <span class="inline-block fa-brands fa-yelp"></span></a>
       </li>
     </ul>
   </footer>
   
-  
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script src="src/assets/flickity/flickity.js"></script>
   <script src="src/assets/fontawesome/all.min.js"></script>
-  <script src="src/script.js"></script>
+  <script src="src/prod.js"></script>  
 </body>
 </html>

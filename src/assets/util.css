@@ -81,7 +81,7 @@
   --color-primary-dark: hsl(var(--color-primary-dark-h), var(--color-primary-dark-s), var(--color-primary-dark-l));
   --color-primary-h: 39;
   --color-primary-s: 68%;
-  --color-primary-l: 52%;
+  --color-primary-l: 58%;
   --color-primary: hsl(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l));
   --color-primary-light-h: 250;
   --color-primary-light-s: 84%;
