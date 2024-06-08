@@ -1,14 +1,13 @@
 @import 'assets/reset.css'; /* ← reset */
 
-/* ↓ copy these templates from Github & modify them locally */
+/* settings */
 @import 'assets/typography.css';
 @import 'assets/icons.css';
 @import 'assets/buttons.css';
 @import 'assets/forms.css';
 
-/* ↓ import here the CodyHouse components */
-@import 'components/_1_header.css';
-@import 'components/_1_footer.css';
+/*  components */
+
 /* ... */
 
 @import 'assets/util.css'; /* ← utility classes */
