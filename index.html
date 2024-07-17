@@ -9,7 +9,7 @@
   <meta content="Site description" name="description"/>
  
   <meta content="website" property="og:type"/>
-  <meta content="https://www.haslett.construction" property="og:url"/>
+  <meta content="https://www.haslettconstruction.co" property="og:url"/>
   <meta content="image/webp" property="og:image:type"/>
   <meta content="IMAGEKIT" property="og:image"/>
   <meta content="The logo of Haslett Construction Company. It is a stylized capital H with the outline of a roof within the negative 
@@ -30,9 +30,8 @@
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="src/prod.css" media="screen"  type="text/css"/>  
-  <link rel="stylesheet" href="src/assets/flickity/flickity.css" media="screen">
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <link rel="stylesheet" href="src/assets/fontawesome/all.min.css" media="screen"  type="text/css"/>
+  <link href="src/assets/calendly.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="src/assets/fontawesome/all.min.css" media="screen" type="text/css" />
 </head>
 
 <body class="bg-primary">
@@ -64,53 +63,34 @@
       <p>Lic. #B-654075 | Fully Insured</p>
     </section>
     
-    <section class="hcc-micro-gallery width-100% border-bottom border-top border-4 border-accent order-2@md">
-      <figure class="micro-gallery-cell">
-        <img
-            src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_before_v1.jpg?updatedAt=1717010560668"
-            alt=""/>
-      </figure>
-      <figure class="micro-gallery-cell">
-        <img
-            src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_exteriorafter_closeup.jpg?updatedAt=1717010559789"
-            alt=""/>
+    <section class="swipe-content js-swipe-content compare-slider js-compare-slider width-100% border-bottom border-top border-4 border-accent order-2@md">
+      <figure class="compare-slider__img compare-slider__img--original">
+        <img src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_exteriorafter_closeup.jpg?updatedAt=1717010559789" alt="Original Image">
+        <figcaption class="compare-slider__caption js-compare-slider__caption">After</figcaption>
       </figure>
       
-      <!--<figure class="micro-gallery-cell">
-        <img
-            src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_kitchen.jpg?updatedAt=1717010559593"
-            alt=""/>
+      <figure class="compare-slider__img compare-slider__img--modified js-compare-slider__img--modified">
+        <img src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_before_v1.jpg?updatedAt=1717010560668" alt="Modified Image">
+        <figcaption class="compare-slider__caption js-compare-slider__caption">Before</figcaption>
       </figure>
-      <figure class="micro-gallery-cell">
-        <img
-            src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_livingroom.jpg?updatedAt=1717010560054"
-            alt=""/>
-      </figure>
-      <figure class="micro-gallery-cell">
-        <img
-            src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_bedroom.jpg?updatedAt=1717010557067"
-            alt=""/>
-      </figure>-->
-    
+      
+      <label>
+        <input class="compare-slider__input-handle js-compare-slider__input-handle" type="range" min="0" max="100" step="1" value="50">
+      </label>
+      
+      <span class="compare-slider__handle js-compare-slider__handle">
+        <svg class="iy2-icon iy2-icon--sm" viewBox="0 0 24 24"><path d="M7.7,5.042a.5.5,0,0,0-.54.092l-7,6.5a.5.5,0,0,0,0,.732l7,6.5A.5.5,0,0,0,7.5,19a.5.5,0,0,0,.5-.5V5.5A.5.5,0,0,0,7.7,5.042Z"/><path d="M23.84,11.634l-7-6.5A.5.5,0,0,0,16,5.5v13a.5.5,0,0,0,.84.366l7-6.5a.5.5,0,0,0,0-.732Z"/></svg>
+      </span>
     </section>
   </div>
   
   <footer class="bg-black padding-y-sm flex flex-column flex-center text-center width-100%">
     <small class="color-white">Copyright &copy; 2024 Haslett Construction Company, Inc. <br /> All rights reserved.</small>
-    <ul class="flex flex-row gap-x-sm">
-      <li>
-        <a class="text-lg" href=""> <span class="inline-block fa-brands fa-houzz"></span></a>
-      </li>
-      <li>
-        <a class="text-lg" href=""> <span class="inline-block fa-brands fa-yelp"></span></a>
-      </li>
-    </ul>
   </footer>
 </div>
   
   
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script src="src/assets/flickity/flickity.js"></script>
+  <script async src="src/assets/calendly.js" type="text/javascript"></script>
   <script src="src/assets/fontawesome/all.min.js"></script>
   <script src="src/prod.js"></script>  
 </body>

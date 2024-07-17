@@ -7,22 +7,178 @@
 @import 'assets/forms.css';
 
 /*  components */
-
+@import 'assets/calendly.css';
 /* ... */
 
 @import 'assets/util.css'; /* ← utility classes */
 
-.micro-gallery-cell {
-    width: 100%; /* full width */
+/* variables */
+.swipe-content {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-contrast-low);
+    border-radius: var(--radius-md);
+    cursor: default;
+    transition: background 0.2s;
 }
-.flickity-prev-next-button.previous {
-    display: none;
+.swipe-content:active {
+    background-color: var(--color-contrast-medium);
 }
-.flickity-prev-next-button.next {
-    display: none;
+
+.compare-slider {
+    position: relative;
 }
-/* position dots up a bit */
-.flickity-page-dots {
+.compare-slider img {
+    display: block;
+    width: 100%;
+    pointer-events: none;
+}
+
+.compare-slider__inner {
+    position: relative;
+}
+
+.compare-slider__img {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+.compare-slider__caption {
+    position: absolute;
+    bottom: 0;
+    font-size: var(--text-sm);
+    padding: var(--space-sm);
+    background-color: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.75);
+    color: var(--color-white);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.compare-slider__img--original .compare-slider__caption {
+    right: 0;
+}
+
+.compare-slider__img--modified .compare-slider__caption {
+    left: 0;
+}
+
+.compare-slider__handle {
     display: none;
-    /* bottom: -22px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    color: var(--color-contrast-higher);
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-sm);
+    cursor: grab;
+    will-change: left;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%) translateX(-50%) scale(0);
+    margin-left: -1px;
+}
+
+.compare-slider--is-dragging .compare-slider__handle {
+    cursor: grabbing;
+    box-shadow: var(--shadow-sm), 0 0 0 4px hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.5);
+}
+
+.compare-slider__input-handle {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.compare-slider__input-handle:focus + .compare-slider__handle {
+    color: var(--color-primary);
+    box-shadow: var(--shadow-sm), 0 0 0 4px hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.5);
+}
+
+.compare-slider__img--modified {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    transform: translateZ(0);
+    border-right: 2px solid var(--color-bg);
+    will-change: width;
+}
+.compare-slider__img--modified img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+
+.compare-slider--in-viewport .compare-slider__img--modified {
+    width: 50%;
+    animation: compare-slider-bounce-in 0.7s;
+}
+
+.compare-slider__caption {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.compare-slider--in-viewport .compare-slider__caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.compare-slider--in-viewport .compare-slider__caption--hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.compare-slider__img--original .compare-slider__caption--hide {
+    transform: translateX(30px);
+}
+
+.compare-slider__img--modified .compare-slider__caption--hide {
+    transform: translateX(-30px);
+}
+
+.compare-slider__handle {
+    display: flex;
+    opacity: 0;
+}
+
+.compare-slider--in-viewport .compare-slider__handle {
+    transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+    transform: translateY(-50%) translateX(-50%) scale(1);
+    opacity: 1;
+}
+
+.compare-slider__input-handle {
+    display: block;
+}
+
+.compare-slider--reduced-motion .compare-slider__img--modified {
+    animation: none;
+}
+
+.compare-slider--reduced-motion .compare-slider__handle,
+.compare-slider--reduced-motion .compare-slider__caption {
+    transition: none;
+}
+
+@keyframes compare-slider-bounce-in {
+    0% {
+        width: 0;
+    }
+    60% {
+        width: 55%;
+    }
+    100% {
+        width: 50%;
+    }
 }
