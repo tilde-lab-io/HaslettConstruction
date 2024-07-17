@@ -139,7 +139,7 @@
 (function() {
     var ComparisonSlider = function(element) {
         this.element = element;
-        this.modifiedImg = this.element.getElementsByClassName('js-compare-slider__img--modified')[0];
+        this.beforeImg = this.element.getElementsByClassName('js-compare-slider__img--before')[0];
         this.handle = this.element.getElementsByClassName('js-compare-slider__handle')[0];
         this.keyboardHandle = this.element.getElementsByClassName('js-compare-slider__input-handle')[0];
         this.captions = this.element.getElementsByClassName('js-compare-slider__caption');
@@ -163,10 +163,10 @@
         } else if(intersectionObserverSupported) { // reveal slider elements when it enters the viewport
             var observer = new IntersectionObserver(sliderObserve.bind(slider), { threshold: [0, 0.3] });
             observer.observe(slider.element);
-            modifiedImgAnimation(slider);
+            beforeImgAnimation(slider);
         } else { // reveal slider elements right away
             slider.element.classList.add('compare-slider--in-viewport');
-            modifiedImgAnimation(slider);
+            beforeImgAnimation(slider);
         }
         // init drag functionality
         new SwipeContent(slider.element);
@@ -206,11 +206,11 @@
         });
     };
 
-    function modifiedImgAnimation(slider) {
-        // make sure modified img animation runs only one time
-        slider.modifiedImg.addEventListener('animationend', function cb() {
-            slider.modifiedImg.removeEventListener('animationend', cb);
-            slider.modifiedImg.style.animation = 'none';
+    function beforeImgAnimation(slider) {
+        // make sure before img animation runs only one time
+        slider.beforeImg.addEventListener('animationend', function cb() {
+            slider.beforeImg.removeEventListener('animationend', cb);
+            slider.beforeImg.style.animation = 'none';
         });
     };
 
@@ -257,10 +257,10 @@
         slider.leftPosition = Number((slider.leftPosition + percentage).toFixed(2));
         if(slider.leftPosition < 0) slider.leftPosition = 0;
         if(slider.leftPosition > 100) slider.leftPosition = 100;
-        // update slider elements -> modified img width + handle position + input element (keyboard accessibility)
+        // update slider elements -> before img width + handle position + input element (keyboard accessibility)
         slider.keyboardHandle.value = slider.leftPosition;
         slider.handle.style.left = slider.leftPosition + '%';
-        slider.modifiedImg.style.width = slider.leftPosition + '%';
+        slider.beforeImg.style.width = slider.leftPosition + '%';
         updateCompareLabels(slider);
         slider.animating = false;
     };
@@ -268,8 +268,8 @@
     function updateCompareLabels(slider) { // update captions visibility
         for(var i = 0; i < slider.captions.length; i++) {
             var delta = ( i == 0 )
-                ? slider.captions[i].offsetLeft - slider.modifiedImg.offsetLeft - slider.modifiedImg.offsetWidth
-                : slider.modifiedImg.offsetLeft + slider.modifiedImg.offsetWidth - slider.captions[i].offsetLeft - slider.captions[i].offsetWidth;
+                ? slider.captions[i].offsetLeft - slider.beforeImg.offsetLeft - slider.beforeImg.offsetWidth
+                : slider.beforeImg.offsetLeft + slider.beforeImg.offsetWidth - slider.captions[i].offsetLeft - slider.captions[i].offsetWidth;
             slider.captions[i].classList.toggle('compare-slider__caption--hide', delta < 10);
         }
     };
@@ -288,3 +288,5 @@
         }
     }
 }());
+
+document.getElementById("year").innerHTML = new Date().getFullYear();

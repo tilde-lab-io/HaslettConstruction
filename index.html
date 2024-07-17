@@ -50,7 +50,7 @@
   
   <div class="flex flex-column">
     <section class="text-center bg-white padding-md padding-x-xlg@sm padding-x-2xl@md width-100% order-2">
-      <p class="text-md font-bold padding-x-md@sm margin-bottom-md">
+      <p class="text-md font-bold padding-x-md@sm">
         Locally owned and operated, we provide full service remodeling and custom-builds throughout Orange County's coastal communities</p>
       <p class="text-lg font-italic margin-bottom-xs">Have a project in mind?</p>
       <a href="#"
@@ -63,29 +63,42 @@
       <p>Lic. #B-654075 | Fully Insured</p>
     </section>
     
-    <section class="swipe-content js-swipe-content compare-slider js-compare-slider width-100% border-bottom border-top border-4 border-accent order-2@md">
-      <figure class="compare-slider__img compare-slider__img--original">
-        <img src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_exteriorafter_closeup.jpg?updatedAt=1717010559789" alt="Original Image">
-        <figcaption class="compare-slider__caption js-compare-slider__caption">After</figcaption>
-      </figure>
+    <div>
+      <section
+          class="swipe-content js-swipe-content compare-slider js-compare-slider width-100% border-top border-4 border-accent order-2@md">
+        <figure class="compare-slider__img compare-slider__img--after">
+          <img
+              src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_exteriorafter_closeup.jpg?updatedAt=1717010559789"
+              alt="After Image">
+          <figcaption class="compare-slider__caption js-compare-slider__caption color-white">After</figcaption>
+        </figure>
+        
+        <figure class="compare-slider__img compare-slider__img--before js-compare-slider__img--before">
+          <img
+              src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_before_v1.jpg?updatedAt=1717010560668"
+              alt="Before Image">
+          <figcaption class="compare-slider__caption js-compare-slider__caption color-white">Before</figcaption>
+        </figure>
+        
+        <label>
+          <input class="compare-slider__input-handle js-compare-slider__input-handle" type="range" min="0" max="100"
+                 step="1" value="50">
+        </label>
+        
+        <div class="compare-slider__handle js-compare-slider__handle flex gap-2xs">
+          <span class="fa-regular fa-chevron-left bg-accent color-primary text-2xl"></span>
+          <span class="fa-regular fa-chevron-right bg-accent color-primary text-2xl"></span>
+        </div>
+      </section>
       
-      <figure class="compare-slider__img compare-slider__img--modified js-compare-slider__img--modified">
-        <img src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_before_v1.jpg?updatedAt=1717010560668" alt="Modified Image">
-        <figcaption class="compare-slider__caption js-compare-slider__caption">Before</figcaption>
-      </figure>
-      
-      <label>
-        <input class="compare-slider__input-handle js-compare-slider__input-handle" type="range" min="0" max="100" step="1" value="50">
-      </label>
-      
-      <span class="compare-slider__handle js-compare-slider__handle">
-        <svg class="iy2-icon iy2-icon--sm" viewBox="0 0 24 24"><path d="M7.7,5.042a.5.5,0,0,0-.54.092l-7,6.5a.5.5,0,0,0,0,.732l7,6.5A.5.5,0,0,0,7.5,19a.5.5,0,0,0,.5-.5V5.5A.5.5,0,0,0,7.7,5.042Z"/><path d="M23.84,11.634l-7-6.5A.5.5,0,0,0,16,5.5v13a.5.5,0,0,0,.84.366l7-6.5a.5.5,0,0,0,0-.732Z"/></svg>
-      </span>
-    </section>
+      <section class="project-gallery bg-accent width-100% text-center text-md padding-y-sm">
+        <a href="our-projects.html">Browse Our Project Archive</a>
+      </section>
+    </div>
   </div>
   
   <footer class="bg-black padding-y-sm flex flex-column flex-center text-center width-100%">
-    <small class="color-white">Copyright &copy; 2024 Haslett Construction Company, Inc. <br /> All rights reserved.</small>
+    <small class="color-white">Copyright &copy; <span id="year">2018</span> Haslett Construction Company, Inc. <br /> All rights reserved.</small>
   </footer>
 </div>
   
