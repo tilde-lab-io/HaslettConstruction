@@ -45,7 +45,7 @@
 </header>
   <section>
     <article class="container flex flex-column padding-y-xl width-70%@md">
-      <header>
+      <header class="radius-md overflow-hidden">
         <figure class="position-relative flex flex-column">
           <img
               src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_exteriorafter_wideangle.jpg?updatedAt=1717010561082"
@@ -65,27 +65,93 @@
       <section>
         <p class="width-100% text-center text-sm color-accent-lighter cen">Click Thumbnails to Expand</p>
         <div  class="flex flex-row gap-xs margin-bottom-sm">
-          <button class="modal-img-btn radius-md overflow-hidden"
-                  aria-controls="modal-image-name"
-                  aria-label="Show larger image preview">
-            <img
-                src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_livingroom.jpg?updatedAt=1717010560054"
-                alt="">
-          </button>
-          <button class="modal-img-btn radius-md overflow-hidden"
-                  aria-controls="modal-image-name"
-                  aria-label="Show larger image preview">
-            <img
-                src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_kitchen.jpg?updatedAt=1717010559593"
-                alt="">
-          </button>
-          <button class="modal-img-btn radius-md overflow-hidden"
-                  aria-controls="modal-image-name"
-                  aria-label="Show larger image preview">
-            <img
-                src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_bedroom.jpg?updatedAt=1717010557067"
-                alt="">
-          </button>
+          <div>
+            <button class="modal-img-btn radius-sm overflow-hidden"
+                    aria-controls="modal-cottages-livingroom"
+                    aria-label="Show larger image preview">
+              <img
+                  src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_livingroom.jpg?updatedAt=1717010560054"
+                  alt="">
+            </button>
+            <div id="modal-cottages-livingroom"
+                 class="modal modal--animate-scale bg-black bg-opacity-90% padding-md js-modal">
+              <div class="modal__content width-100% height-100% flex flex-center pointer-events-none" role="alertdialog"
+                   aria-labelledby="" aria-describedby="">
+                <img class="radius-md shadow-md max-height-100% max-width-100%"
+                     src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_livingroom.jpg?updatedAt=1717010560054"
+                     alt="Image description">
+              </div>
+              
+              <button class=" modal__close-btn modal__close-btn--outer  js-modal__close ">
+                <svg class="icon icon--sm" viewBox="0 0 24 24">
+                  <title>Close modal window</title>
+                  <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round">
+                    <line x1="3" y1="3" x2="21" y2="21"/>
+                    <line x1="21" y1="3" x2="3" y2="21"/>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>          
+          <div>
+            <button class="modal-img-btn radius-sm overflow-hidden"
+                    aria-controls="modal-cottages-kitchen"
+                    aria-label="Show larger image preview">
+              <img
+                  src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_kitchen.jpg?updatedAt=1717010559593"
+                  alt="">
+            </button>
+            <div id="modal-cottages-kitchen"
+                 class="modal modal--animate-scale bg-black bg-opacity-90% padding-md js-modal">
+              <div class="modal__content width-100% height-100% flex flex-center pointer-events-none" role="alertdialog"
+                   aria-labelledby="" aria-describedby="">
+                <img class="radius-md shadow-md max-height-100% max-width-100%"
+                     src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_kitchen.jpg?updatedAt=1717010559593"
+                     alt="Image description">
+              </div>
+              
+              <button class=" modal__close-btn modal__close-btn--outer  js-modal__close ">
+                <svg class="icon icon--sm" viewBox="0 0 24 24">
+                  <title>Close modal window</title>
+                  <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round">
+                    <line x1="3" y1="3" x2="21" y2="21"/>
+                    <line x1="21" y1="3" x2="3" y2="21"/>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>          
+          <div>
+            <button class="modal-img-btn radius-sm overflow-hidden"
+                    aria-controls="modal-cottages-bedroom"
+                    aria-label="Show larger image preview">
+              <img
+                  src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_bedroom.jpg?updatedAt=1717010557067"
+                  alt="">
+            </button>
+            <div id="modal-cottages-bedroom"
+                 class="modal modal--animate-scale bg-black bg-opacity-90% padding-md js-modal">
+              <div class="modal__content width-100% height-100% flex flex-center pointer-events-none" role="alertdialog"
+                   aria-labelledby="" aria-describedby="">
+                <img class="radius-md shadow-md max-height-100% max-width-100%"
+                     src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_bedroom.jpg?updatedAt=1717010557067"
+                     alt="Image description">
+              </div>
+              
+              <button class=" modal__close-btn modal__close-btn--outer  js-modal__close ">
+                <svg class="icon icon--sm" viewBox="0 0 24 24">
+                  <title>Close modal window</title>
+                  <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round">
+                    <line x1="3" y1="3" x2="21" y2="21"/>
+                    <line x1="21" y1="3" x2="3" y2="21"/>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </article>
@@ -95,6 +161,7 @@
     <small class="color-white">Copyright &copy; <span id="year">2018</span> Haslett Construction Company, Inc. <br/> All
       rights reserved.</small>
   </footer>
-  <script src=""></script>
+<script src="src/assets/fontawesome/all.min.js"></script>
+<script src="src/prod.js"></script>
 </body>
 </html>
