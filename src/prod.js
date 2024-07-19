@@ -1,3 +1,6 @@
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
 (function() {
     var SwipeContent = function(element) {
         this.element = element;
@@ -289,4 +292,4 @@
     }
 }());
 
-document.getElementById("year").innerHTML = new Date().getFullYear();
+

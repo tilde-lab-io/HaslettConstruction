@@ -12,6 +12,7 @@
 
 @import 'assets/util.css'; /* ← utility classes */
 
+
 /* variables */
 .swipe-content {
     height: 100%;
@@ -24,6 +25,7 @@
     background-color: var(--color-contrast-medium);
 }
 
+/*Image Comparison*/
 .compare-slider {
     position: relative;
 }
@@ -176,3 +178,4 @@
         width: 50%;
     }
 }
+
