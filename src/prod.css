@@ -1,16 +1,16 @@
-@import 'assets/reset.css'; /* ← reset */
+@import '/src/assets/reset.css'; /* ← reset */
 
 /* settings */
-@import 'assets/typography.css';
-@import 'assets/icons.css';
-@import 'assets/buttons.css';
-@import 'assets/forms.css';
+@import '/src/assets/typography.css';
+@import '/src/assets/icons.css';
+@import '/src/assets/buttons.css';
+@import '/src/assets/forms.css';
 
 /*  components */
-@import 'assets/calendly.css';
+@import '/src/assets/calendly.css';
 /* ... */
 
-@import 'assets/util.css'; /* ← utility classes */
+@import '/src/assets/util.css'; /* ← utility classes */
 
 
 /* variables */
