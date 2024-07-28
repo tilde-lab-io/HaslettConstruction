@@ -1,6 +1,7 @@
-document.getElementById("year").innerHTML = new Date().getFullYear();
-
-
+let newYear = new Date().getFullYear();
+let currentYear = document.getElementById("year");
+currentYear.innerHTML = newYear.toString();
+  
 (function() {
     var SwipeContent = function(element) {
         this.element = element;
@@ -423,12 +424,12 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
     };
 
     Modal.prototype.trapFocus = function(event) {
-        if( this.firstFocusable == document.activeElement && event.shiftKey) {
+        if( this.firstFocusable === document.activeElement && event.shiftKey) {
             //on Shift+Tab -> focus last focusable element when focus moves out of modal
             event.preventDefault();
             this.lastFocusable.focus();
         }
-        if( this.lastFocusable == document.activeElement && !event.shiftKey) {
+        if( this.lastFocusable === document.activeElement && !event.shiftKey) {
             //on Tab -> focus first focusable element when focus moves out of modal
             event.preventDefault();
             this.firstFocusable.focus();

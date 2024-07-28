@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="robots" content="index, follow">
+  <meta http-equiv="content-type" content="public">
   <title>Haslett Construction Co, Inc. | New builds, ADUs, and Home Remodeling</title>
-  <link href="https://haslettconstruction.co/" rel="canonical"/>  
+  <link href="https://www.haslettconstruction.co/" rel="canonical"/>  
   <meta content="General Contractor Jeff Haslett provides full-service home remodeling services throughout the coastal and coastal-adjacent communities of Orange County, CA. License #B-654075; fully insured and bonded" name="description"/>
   <meta name="keywords" content="Irvine, Costa Mesa, Tustin, Rancho Santa Margarita, Huntington Beach, Mission Viejo, Lake Forest, Ladera Ranch, Newport Beach, Laguna Beach, Laguna Niguel, Laguna Hills, Aliso Viejo, Coto de Caza, Dana Point, Rancho Mission Viejo, San Juan Capistrano" />
   <meta content="#ffffff" name="theme-color">
@@ -42,30 +43,28 @@
 </head>
 
 <body class="bg-dark">
-  <header class="bg-white margin-bottom-lg@md" role="banner">
-    <figure class="bg-accent">
-      <img src="https://ik.imagekit.io/HaslettConstruction/Branding/HCC_Logo_fabe4f_small.png?updatedAt=1721616117010" alt="The logo of Haslett Construction Company. It consists of a stylized capital H with as a brandmark, followed by the company's name. The company colors are a warm yellow, white, and black."
+  <header class="bg-accent margin-bottom-lg@md" role="banner">
+    <figure>
+      <img src="https://ik.imagekit.io/HaslettConstruction/Branding/HCC_Logo_fabe4f.svg?updatedAt=1721611316364" alt="The logo of Haslett Construction Company. It consists of a stylized capital H with as a brandmark, followed by the company's name. The company colors are a warm yellow, white, and black."
            class="width-100% padding-x-md max-width-xs@xs max-width-sm@md margin-auto">
-      <figcaption><h1 class="height-0 width-0 invisible">Haslett Construction Co, Inc.</h1></figcaption>
+      <figcaption><h1 class="height-0 width-0 invisible">Haslett Construction Co, Inc. | Jeff Haslett, General Contractor</h1></figcaption>
     </figure>
-    <div class="text-center padding-x-sm padding-x-xl@xs padding-x-3xs@sm padding-y-md">
-      <p class="text-lg margin-bottom-sm font-extrabold">Residential Remodeling and General Contracting Services</p>
+    <div class="bg-white text-center padding-x-sm padding-x-xl@xs padding-x-3xs@sm padding-y-md">
+      <p class="text-lg margin-bottom-sm font-deco">Residential Remodeling and General Contractor Services</p>
       <p class="text-md font-italic">Serving Orange County since 1992!</p>
     </div>
   </header>
   <main class="padding-x-lg@md padding-x-2xl@lg padding-x-3xl@xl shadow-xl margin-0">    
     <div class="flex flex-column flex-row@md">
       <section class="flex flex-column flex-center text-center bg-white padding-md order-1 margin-bottom-lg@md">
-        <p class="text-md font-bold padding-x-lg@sm padding-x-lg@md margin-bottom-sm">
+        <p class="text-component--tight text-md font-bold padding-x-lg@sm padding-x-lg@md margin-bottom-sm">
           Locally owned and operated, we provide full service remodeling and custom-builds throughout Orange County's coastal communities</p>
-        <p class="text-lg font-italic margin-bottom-xs"><strong>Have a project in mind?</strong></p>
-        <a href="#"
-           id="schedule-appt"
-           class="btn--primary color-accent inline-block padding-sm radius-sm margin-bottom-sm"
-           onclick="Calendly.initPopupWidget({url: 'https://calendly.com/haslettconstructionco/15min'});return false;">
-          Schedule an Appointment
-        </a>
-        <p><span class="font-extrabold">Lic. #B-654075</span> | <span class="font-extrabold">Fully Insured</span></p>
+        <p class="text-lg font-primary-italic margin-bottom-xs">Have a project in mind?</p>
+        <div id="scheduling-frame">
+          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/haslettconstructionco/15min'});return false;" class="btn--primary color-accent inline-block padding-sm radius-sm margin-bottom-sm font-deco">Schedule an Appointment</a>
+        </div>
+        <p>Lic. #B-654075 &ndash; Fully Insured</p>
+<!--        <aside id="scheduling-frame" class=""></aside>-->
       </section>
       
       <section class="border-top border-primary border-4 order-2@md height-50%@md margin-bottom-lg@md">
@@ -73,14 +72,14 @@
           <figure class="compare-slider__img compare-slider__img--after">
             <img
                 src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_exteriorafter_closeup.jpg?updatedAt=1717010559789"
-                alt="After Image">
+                alt="An image featuring the completed renovations of the same property in Laguna Beach, California">
             <figcaption class="compare-slider__caption js-compare-slider__caption color-white">After</figcaption>
           </figure>
           
           <figure class="compare-slider__img compare-slider__img--before js-compare-slider__img--before">
             <img
                 src="https://ik.imagekit.io/HaslettConstruction/Projects/435%20N%20Coast%20Hwy,%20Laguna%20Beach/cottages_before_v1.jpg?updatedAt=1717010560668"
-                alt="Before Image">
+                alt="An image of an in-progress renovation of a property in Laguna Beach, California">
             <figcaption class="compare-slider__caption js-compare-slider__caption color-white">Before</figcaption>
           </figure>
           
@@ -94,13 +93,14 @@
            </div>
         </div>
         
-        <div class="padding-sm bg-accent width-100% border-top border-bottom border-primary border-4 text-center text-md order-1@sm">
+        <nav class="padding-sm bg-accent width-100% border-top border-bottom border-primary border-4 text-center text-md order-1@sm">
           <p class="color-primary text-lg@sm text-md@md margin-bottom-xs">Renovations &bull; New Builds &bull; Remodeling <br> Additions &bull; ADUs &bull; Kitchen &amp; Bath</p>              
           <a href="our-projects.html" class="color-white">Browse Our Project Archive</a>
-        </div>
+        </nav>
       </section>
     </div>    
   </main>
+  
   
   <footer class="bg-black padding-y-sm flex flex-column flex-center text-center width-100%" role="contentinfo">
     <small class="color-white">Copyright &copy; <span id="year">2018</span> Haslett Construction Company, Inc. <br /> All rights reserved.</small>

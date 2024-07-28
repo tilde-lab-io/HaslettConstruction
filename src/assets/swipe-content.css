@@ -1,0 +1,11 @@
+﻿/* variables */
+.swipe-content {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-contrast-low);
+    cursor: default;
+    transition: background 0.2s;
+}
+.swipe-content:active {
+    background-color: var(--color-contrast-medium);
+}

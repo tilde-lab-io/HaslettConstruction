@@ -14,9 +14,9 @@
   --space-3xl: clamp(9.25rem, calc(4.75rem + 9.375vw), 12.25rem);
   --space-4xl: clamp(15rem, calc(7.5rem + 15.625vw), 20rem);
   /* font-family */
-  --font-primary-regular: FiraRegular, sans-serif;
+  --font-primary-regular: FiraMedium, sans-serif;
   --font-primary-italic: FiraItalic, sans-serif;
-  --font-primary-bold: FiraBold, sans-serif;
+  --font-primary-bold: FiraSemiBold, sans-serif;
   --font-deco: Bungee, sans-serif;
   /* font-size */
   --text-xs: clamp(0.6875rem, calc(0.59375rem + 0.1953125vw), 0.75rem);

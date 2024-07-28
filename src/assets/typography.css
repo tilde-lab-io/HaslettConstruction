@@ -1,46 +1,46 @@
 @font-face {
-  font-family: 'Bungee', sans-serif;
-  font-style: Normal;
-  font-weight: 400;
-  src: 
-    local("Bungee-Regular");
-    url(/fonts/bungee/bungee-regular.ttf) format('ttf');
-    url(/fonts/bungee/bungee-regular.woff) format('woff');
-    url(/fonts/bungee/bungee-regular.otf) format('otf');
-}
-
-@font-face {
   font-family: 'FiraMedium', sans-serif;
   font-style: Normal;
   font-weight: 400;
   src: 
-    local("FiraSansCondensed-Medium");
-    url(fonts/firaSC/firasanscondensed-medium.ttf) format('ttf');
-    url(fonts/firaSC/firasanscondensed-medium.woff) format('woff');
-    url(fonts/firaSC/firasanscondensed-medium.otf) format('otf');
+    local("FiraSansCondensed-Medium"),
+    url('/src/assets/fonts/firaSC/firasanscondensed-medium.ttf') format('ttf'),
+    url('/src/assets/fonts/firaSC/firasanscondensed-medium.woff') format('woff'),
+    url('/src/assets/fonts/firaSC/firasanscondensed-medium.otf') format('otf');
 }
 
 @font-face {
-  font-family: 'FiraSansCondensed-MediumItalic', sans-serif;
+  font-family: 'FiraItalic', sans-serif;
   font-style: Normal;
   font-weight: 400;
   src: 
-    local("FiraSansCondensed-MediumItalic");
-    url(fonts/firaSC/firasanscondensed-mediumitalic.ttf) format('ttf');
-    url(fonts/firaSC/firasanscondensed-mediumitalic.woff) format('woff');
-    url(fonts/firaSC/firasanscondensed-mediumitalic.otf) format('otf');
+    local("FiraSansCondensed-MediumItalic"),
+    url('/src/assets/fonts/firaSC/firasanscondensed-mediumitalic.ttf') format('ttf'),
+    url('/src/assets/fonts/firaSC/firasanscondensed-mediumitalic.woff') format('woff'),
+    url('/src/assets/fonts/firaSC/firasanscondensed-mediumitalic.otf') format('otf');
 }
 
 @font-face {
-  font-family: 'FiraSansCondensed-SemiBold', sans-serif;
+  font-family: 'FiraSemiBold', sans-serif;
   font-style: Normal;
   font-weight: 600;
   src: 
-    local("FiraSansCondensed-SemiBold");
-    url(fonts/firaSC/firasanscondensed-semibold.ttf) format('ttf');
-    url(fonts/firaSC/firasanscondensed-semibold.woff) format('woff');
-    url(fonts/firaSC/firasanscondensed-semibold.otf) format('otf');
+    local("FiraSansCondensed-SemiBold"),
+    url(/src/assets/fonts/firaSC/firasanscondensed-semibold.ttf) format('ttf'),
+    url(/src/assets/fonts/firaSC/firasanscondensed-semibold.woff) format('woff'),
+    url(/src/assets/fonts/firaSC/firasanscondensed-semibold.otf) format('otf');
 }
+
+@font-face {
+  font-family: 'Bungee', sans-serif;
+  font-style: Normal;
+  font-weight: 400;
+  src: local("Bungee-Regular"),
+  url(/src/assets/fonts/bungee/Bungee-Regular.ttf) format('ttf'),
+  url(/src/assets/fonts/bungee/bungee-regular.woff) format('woff'),
+  url(/src/assets/fonts/bungee/bungee-regular.otf) format('otf');
+}
+
 
 html {
   -webkit-font-smoothing: antialiased;
