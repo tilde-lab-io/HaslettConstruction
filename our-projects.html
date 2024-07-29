@@ -7,7 +7,8 @@
   <link href="https://www.haslettconstruction.co/our-projects" rel="canonical"/>
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/dist/style.css" media="screen"  type="text/css"/>
-    <link rel="stylesheet" href="src/assets/fontawesome/all.min.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="src/assets/fontawesome/all.min.css" media="screen" type="text/css" />
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <title>Haslett Construction Co, Inc. | Our Projects</title>
 </head>
 
@@ -23,7 +24,7 @@
     <a href="index.html" class="color-accent">Home</a>
   </nav>
 </header>
-  <main class="width-90%@sm width-80%@lg margin-auto">
+  <main class="position-relative width-90%@sm width-80%@lg margin-auto">
     <article class="container flex flex-column flex-row@lg shadow-lg radius-lg bg-light bg-opacity-10% margin-bottom-lg padding-md@lg">
       <header class="radius-sm overflow-hidden width-70%@lg">
         <figure class="position-relative margin-bottom-md">
@@ -132,20 +133,18 @@
         </div>
       </section>
     </article>
-  </main>
-  <aside class="position-relative">
     <!-- Calendly link widget begin -->
-    <a href="" 
+    <a href=""
        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/haslettconstructionco/15min'});return false;" class="position-fixed right-md bottom-md z-index-2 inline-block padding-sm radius-50% text-center bg-primary">
       <span class="fa-solid fa-calendar-pen inline-block padding-x-4xs text-3xl color-accent"></span>
     </a>
     <!-- Calendly link widget end -->
-  </aside>
+  </main>
   <footer class="bg-black padding-y-sm flex flex-column flex-center text-center width-100%" role="contentinfo">
     <small class="color-white">Copyright &copy; <span id="year">2018</span> Haslett Construction Company, Inc. <br/> All rights reserved.</small>
   </footer>
-<script src="src/assets/fontawesome/all.min.js"></script>
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script src="src/assets/fontawesome/all.min.js"></script>
 <script src="dist/script.js"></script>
 </body>
 </html>
