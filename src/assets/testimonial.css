@@ -1,0 +1,27 @@
+﻿:root {
+    --testimonial-slideshow-profile-img-size: 48px;
+}
+@media (min-width: 64rem) {
+    :root {
+        --testimonial-slideshow-profile-img-size: 64px;
+    }
+}
+
+.testimonial-slideshow {
+    --slideshow-height: 320px;
+}
+@media (min-width: 64rem) {
+    .testimonial-slideshow {
+        --slideshow-height: 420px;
+    }
+}
+
+.testimonial-slideshow__profile-img {
+    width: var(--testimonial-slideshow-profile-img-size);
+    height: var(--testimonial-slideshow-profile-img-size);
+    overflow: hidden;
+}
+.testimonial-slideshow__profile-img img {
+    display: block;
+    width: 100%;
+}

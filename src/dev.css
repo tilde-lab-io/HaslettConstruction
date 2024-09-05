@@ -9,8 +9,10 @@
 
 /*  components */
 @import 'assets/swipe-content.css';
+@import 'assets/slideshow.css';
 @import 'assets/image-compare.css';
 @import 'assets/modal.css';
+@import 'assets/testimonial.css';
 
 /* 3rd party */
 @import 'assets/fontawesome/all.min.css';
